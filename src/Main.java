@@ -48,15 +48,20 @@ public class Main {
         }
 
         System.out.println("Задача 5.");
-        int ageOfKid = 4;
+        int ageOfKid = 7;
+        boolean withAdualt = false;
 
         if (ageOfKid < 5) {
             System.out.println("Если возраст ребенка равен " + ageOfKid +
                     ", то ему нельзя кататься на аттракционе.");
             }
-        else if (ageOfKid >=5 && ageOfKid < 14) {
+        else if (ageOfKid >= 5 && ageOfKid < 14 && withAdualt) {
             System.out.println("Если возраст ребенка равен " + ageOfKid +
                     ", то ему можно кататься на аттракционе в сопровождении взрослого.");
+        }
+        else if (ageOfKid >= 5 && ageOfKid < 14 && !withAdualt) {
+            System.out.println("Если возраст ребенка равен " + ageOfKid +
+                    ", но нет взрослого, то ему нельзя кататься на аттракционе.");
         }
         else {
             System.out.println("Если возраст ребенка равен " + ageOfKid +
